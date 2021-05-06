@@ -14,7 +14,7 @@ if not os.path.isdir(download_folder):
     os.makedirs(download_folder, exist_ok=True)
     
 mail = Imbox(host, username=username, password=password, ssl=True, ssl_context=None, starttls=False)
-messages = mail.messages(unread=True) 
+messages = mail.messages() 
 
 for (uid, message) in messages:
     mail.mark_seen(uid) 
