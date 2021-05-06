@@ -7,8 +7,8 @@ parser.add_argument("-d", "--folder", help = "Show download_folder",type=str)
 args = parser.parse_args()
 
 host = "imap.gmail.com"
-username = "lobnaamiri96@gmail.com"
-password = 'C11083779in@'
+username = "amirilobna4@gmail.com"
+password = '13051996*'
 download_folder=args.folder
 if not os.path.isdir(download_folder):
     os.makedirs(download_folder, exist_ok=True)
